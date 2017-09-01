@@ -8,9 +8,9 @@
   ],
   "scripts": {
     "build": "stencil build",
-    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server --no-open\" ",
     "lint": "tslint -c tslint.json 'src/**/*.ts?'",
-    "serve": "stencil-dev-server",
+    "serve": "stencil-dev-serve  --no-openr",
     "start": "npm run dev"
   },
   "dependencies": {
